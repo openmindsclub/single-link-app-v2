@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: #1e272e;
+  color: white;
+  font-size: 10px;
+  overflow-x: hidden;
+  padding: 1em;
+}
+
+.window {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.27rem;
+  box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+}
+.topbar {
+  width: 100%;
+  height: 30px;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  background-color: #e2e2e2;
+  border-radius: 0.27rem 0.27rem 0 0;
+}
+.terminal {
+  padding: 1em;
+}
+
+button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 2px;
+  border: none;
+}
+button.close {
+  background-color: #ff6059;
+}
+button.minimize {
+  background-color: #ffbd2e;
+}
+button.maximize {
+  background-color: #29ca42;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 1em;
+}
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+li a:hover {
+  color: #ff00ff;
+  text-decoration: underline;
+}
+.facebook {
+  color: #1877f2;
+}
+.instagram {
+  color: #bc2a8d;
+}
+.discord {
+  color: #7289da;
+}
+.linkedin {
+  color: #0077b5;
+}
+.twitter {
+  color: #e7e9ea;
+}
+
+.facebook:hover {
+  color: #1771e6;
+}
+.instagram:hover {
+  color: #c72d8e;
+}
+.discord:hover {
+  color: #677bc4;
+}
+.linkedin:hover {
+  color: #00568e;
+}
+.twitter:hover {
+  color: #8e8e8e;
+}
+
+.typewriter {
+  display: inline-block;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid #fff;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(29, end), blink-caret 0.5s step-end infinite;
+  padding: 0;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  p{
+    font-size: 7px;
+  }
+}
