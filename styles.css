@@ -114,6 +114,7 @@ li a:hover {
 
 .footer {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1em;
   font-size: 18px;
