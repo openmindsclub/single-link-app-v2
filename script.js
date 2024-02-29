@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('a');
-let focusedIndex = 7;
+let focusedIndex = 0;
 
 links[focusedIndex].focus();
 
